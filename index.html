@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Checker</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <h2 style="color: yellow; border-radius: 20px; background-color: black; width: fit-content; text-align: center; padding: 10px; margin: 25px;">Get to know about holidays!!!</h2>
+    <button id="yesterday" onclick="yesterday()">Yesterday</button>
+    <button id="lastWeek" onclick="lastWeek()">Last Week</button>
+    <button id="lastMonth" onclick="lastMonth()">Last Month</button>
+    <button id="custom" onclick="showCustomInput()">Custom Date</button>
+    <br>
+    <br>
+    <div id="customDate">
+        <label for="firstDate">From :- </label>
+        <input type="date" id="firstDate">
+        <br>
+        <br>
+        <label for="secondDate">To  &nbsp; &nbsp; :- </label>
+        <input type="date" id="secondDate">
+        <button id="find" onclick="findHoliday()">Find Holidays..</button>
+    </div>
+    <div id="holidays">
+        <table id = "showTable">
+            <tr id="heading">
+                <th>Title</th>
+                <th>Date</th>
+                <th>Description</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
